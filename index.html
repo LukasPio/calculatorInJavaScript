@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator by LucasPio</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+
+  <div class="mainContainer">
+    <section class="cabecalho">
+      <h3 id="tittle">Calc.js</h3>
+      <button onclick="switchTheme()" id="switchTheme">Switch Theme Dark/Light</button>
+    </section>
+    <input type="text" class="input" id="campoTexto">
+
+    <table class="numberContainer">
+      <tr class="firstRow">
+        <td><button onclick="limparCampo()">C</button></td>
+        <td><button onclick="adicionarValor('(')">(</button></td>
+        <td><button onclick="adicionarValor(')')">)</button></td>
+        <td><button onclick="adicionarValor('/')">/</button></td>
+      </tr>
+      <tr class="secondRow">
+        <td><button onclick="adicionarValor('7')">7</button></td>
+        <td><button onclick="adicionarValor('8')">8</button></td>
+        <td><button onclick="adicionarValor('9')">9</button></td>
+        <td><button onclick="adicionarValor('*')">*</button></td>
+      </tr>
+      <tr class="thirdtRow">
+        <td><button onclick="adicionarValor('4')">4</button></td>
+        <td><button onclick="adicionarValor('5')">5</button></td>
+        <td><button onclick="adicionarValor('6')">6</button></td>
+        <td><button onclick="adicionarValor('-')">-</button></td>
+      </tr>
+      <tr class="fourthRow">
+        <td><button onclick="adicionarValor('1')">1</button></td>
+        <td><button onclick="adicionarValor('2')">2</button></td>
+        <td><button onclick="adicionarValor('3')">3</button></td>
+        <td><button onclick="adicionarValor('+')">+</button></td>
+      </tr>
+      <tr class="fifthhRow">
+        <td><button onclick="adicionarValor('0')">0</button></td>
+        <td><button onclick="adicionarValor('.')">.</button></td>
+        <td><button onclick="adicionarValor('%')">mod</button></td>
+        <td><button onclick="mostrarResultado()">=</button></td>
+      </tr>
+    </table>
+    <section class="footer">
+      <input type="text" id="resultado" disabled>
+      <button onclick="copiarResultado()" class="copy">Copy</button>
+    </section>
+    <footer>
+      <p id="rodape">Copyright © 2023 by Lucas Pio de A. Galvão All Rights Reserved</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
